@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Encyclopedia</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="plant-icon.png" type="image/png">
+</head>
+<body>
+    <header id="header">
+        <div class="header-content">
+            <h1>Flora of Budhanilkantha School</h1>
+            <p class="tagline">Discover plants your within the school compund.</p>
+            <div class="interactive-icons">
+                <a href="javascript:void(0);" class="icon-link" onclick="showSection('contents')"><img src="transparency.png" alt="Contents Icon" class="icon">Explore Contents</a>
+                <a href="javascript:void(0);" class="icon-link" onclick="showSection('contact')"><img src="contact-us.png" alt="Contact Icon" class="icon">Contact Us</a>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <ul class="nav-list">
+            <li><a href="javascript:void(0);" onclick="showSection('home')">Home</a></li>
+            <li><a href="javascript:void(0);" onclick="showSection('contents')">Contents</a></li>
+            <li><a href="javascript:void(0);" onclick="showSection('contact')">Authors</a></li>
+        </ul>
+    </nav>
+
+    <main id="mainContent">
+        <!-- Home Section -->
+        <section id="home" class="section active">
+            <h2>Welcome to the Local Plant Encyclopedia</h2>
+            <div class="home-introduction">
+                <p>Welcome to the official website for Flora of Budhanilkantha School, a collaborative initiative to document the diversity of plants around us. Nestled at the foot of the majestic Shivapuri Hills, Budhanilkantha School boasts a rich and diverse ecosystem that serves as a living classroom for its students. In our book, we have meticulously cataloged and explained about the plants found within our school This project not only highlights the flora that thrives here but also the importance of preserving biodiversity in our surroundings.
+                    Through this website, we aim to provide an interactive platform where you can explore the wonders of our school’s greenery. From towering trees to delicate wildflowers, each plant plays its own niche in maintaining the ecological balance. Whether you’re a fellow student, a nature enthusiast, or simply curious about the plant life in our school, we invite you to dive into the natural heritage of Budhanilkantha School.
+                    <br>
+                    <br>
+                    We extend our deepest gratitude to everyone who supported and guided us in bringing this project to life. This book, Flora of Budhanilkantha School, is the result of collective efforts of many individuals who have helped us directly or indirectly through out this journey. 
+                    First and foremost, we would like to thank the Principal, Vice Principals, and the Chief Administrative Officer of Budhanilkantha School for fostering an environment that encourages academic exploration and creativity. 
+                    We are immensely grateful to our mentor, Mr Dhruba Kumar Shrestha, for his insightful guidance throughout this journey. His expertise and dedication inspired us to approach this project with enthusiasm and precision. We also owe special thanks to Professor Dharma Raj Dangol, whose profound knowledge of botany and valuable feedback enriched the quality and depth of our research.
+                    Lastly, we would like to thank our teachers and classmates for their motivation. Your support and belief in our vision have made this endeavor possible. Thankyou everyone!</p>
+                <button class="explore-button" onclick="showSection('contents')">Explore Now</button>
+            </div>
+           
+        </section>
+
+        <!-- Contents Section -->
+        <section id="contents" class="section">
+            <h2>Contents</h2>
+            <ul id="plantList">
+                <li><a href="#" class="plantLink" data-plant="plant1" onclick="showPlantDetails('Holy Basil')">Holy Basil</a></li>
+                <li><a href="#" class="plantLink" data-plant="plant2" onclick="showPlantDetails('Zonal Geranium')">Zonal Geranium</a></li>
+                <li><a href="#" class="plantLink" data-plant="plant3" onclick="showPlantDetails('Welsh Onion')">Welsh Onion</a></li>
+                <li><a href="#" class="plantLink" data-plant="plant4" onclick="showPlantDetails('Umbrella')">Welsh Onion</a></li>
+                <li><a href="#" class="plantLink" data-plant="plant5" onclick="showPlantDetails('Tooped Lavender')">Topped Lavender</a></li>
+                <li><a href="#" class="plantLink" data-plant="plant6" onclick="showPlantDetails('Mugwort')">Mugwort</a></li>
+                <li><a href="#" class="plantLink" data-plant="plant7" onclick="showPlantDetails('Thimble Cactus')">Thimble Cactus</a></li>
+                <li><a href="#" class="plantLink" data-plant="plant8" onclick="showPlantDetails('Bay Leaf')">Bay Leaf</a></li>
+                <li><a href="#" class="plantLink" data-plant="plant9" onclick="showPlantDetails('Tea Rose')">Tea Rose</a></li>
+                <li><a href="#" class="plantLink" data-plant="plant10" onclick="showPlantDetails('Swiss Cheese Plant')">Swiss Cheese Plant</a></li>
+                <li><a href="#" class="plantLink" data-plant="plant11" onclick="showPlantDetails('Snake Plant')">Snake Plant</a></li>
+                <li><a href="#" class="plantLink" data-plant="plant12" onclick="showPlantDetails('Chir Pine')">Chir Pine</a></li>
+                <li><a href="#" class="plantLink" data-plant="plant13" onclick="showPlantDetails('Stinging Nettle')">Stinging Nettle</a></li>
+                <li><a href="#" class="plantLink" data-plant="plant14" onclick="showPlantDetails('Himalayan Cypress')">Himalayan Cypress</a></li>
+                <li><a href="#" class="plantLink" data-plant="plant15" onclick="showPlantDetails('Sago Palm')"></a>Sago Palm</li>
+                <li><a href="#" class="plantLink" data-plant="plant16" onclick="showPlantDetails('Red Vein Abutilon')">Red Vein Abutilon</a></li>
+                <li><a href="#" class="plantLink" data-plant="plant17" onclick="showPlantDetails('Purple Heart')">Purple Heart</a></li>
+                <li><a href="#" class="plantLink" data-plant="plant18" onclick="showPlantDetails('Pumpkin')">Pumpkin</a></li>
+                <li><a href="#" class="plantLink" data-plant="plant19" onclick="showPlantDetails('Primrose Jasmine')">Primrose Jasmine</a></li>
+                <li><a href="#" class="plantLink" data-plant="plant20" onclick="showPlantDetails('Pot-marigold')">Pot-marigold</a></li>
+                <li><a href="#" class="plantLink" data-plant="plant21" onclick="showPlantDetails('Poinsettia')">Poinsettia</a></li>
+                <li><a href="#" class="plantLink" data-plant="plant22" onclick="showPlantDetails('Polka Dot Plant')">Polka Dot plant</a></li>
+                <li><a href="#" class="plantLink" data-plant="plant23" onclick="showPlantDetails('Pepinomelon')">Pepinomelon</a></li>
+                <li><a href="#" class="plantLink" data-plant="plant24" onclick="showPlantDetails('Paper Flower')">Paper Flower</a></li>
+                <li><a href="#" class="plantLink" data-plant="plant25" onclick="showPlantDetails('Bottlebrush')">Bottlebrush</a></li>
+                <li><a href="#" class="plantLink" data-plant="plant26" onclick="showPlantDetails('Aloe Vera')">Aloe Vera</a></li>
+                <li><a href="#" class="plantLink" data-plant="plant27" onclick="showPlantDetails('Century Plant')">Century Plant</a></li>
+                <li><a href="#" class="plantLink" data-plant="plant28" onclick="showPlantDetails('African Marigold')">African Marigold</a></li>
+                <li><a href="#" class="plantLink" data-plant="plant29" onclick="showPlantDetails('Tailed Maidenhair')">Tailed Maidenhair</a></li>
+                <li><a href="#" class="plantLink" data-plant="plant30" onclick="showPlantDetails('Field Sowthistle')">Field Sowthistle</a></li>
+                <li><a href="#" class="plantLink" data-plant="plant31" onclick="showPlantDetails('Tropical Soda Apple')">Tropical Soda Apple</a></li>
+                <li><a href="#" class="plantLink" data-plant="plant32" onclick="showPlantDetails('Tree Tomato')">Tree Tomato</a></li>
+                <li><a href="#" class="plantLink" data-plant="plant33" onclick="showPlantDetails('Palm Grass')">Palm Grass</a></li>
+                <li><a href="#" class="plantLink" data-plant="plant34" onclick="showPlantDetails('Yellow Himalayan Raspberry')">Yellow Himalayan Raspberry</a></li>
+                <li><a href="#" class="plantLink" data-plant="plant35" onclick="showPlantDetails('Shingle Oak')">Shingle Oak</a></li>
+                <li><a href="#" class="plantLink" data-plant="plant36" onclick="showPlantDetails('Nepal Knotweed')">Nepal Knotweed</a></li>
+                <li><a href="#" class="plantLink" data-plant="plant37" onclick="showPlantDetails('Pink Knotweed')">Pink Knotweed</a></li>
+                <li><a href="#" class="plantLink" data-plant="plant38" onclick="showPlantDetails('Common Lantana')">Common Lantana</a></li>
+                <li><a href="#" class="plantLink" data-plant="plant39" onclick="showPlantDetails('Crofton Weed')">Crofton Weed</a></li>
+                <li><a href="#" class="plantLink" data-plant="plant40" onclick="showPlantDetails('Billygoat Weed/Chick Weed')">Billygoat Weed/Chick Weed</a></li>
+                <li><a href="#" class="plantLink" data-plant="plant41" onclick="showPlantDetails('Alligator weed')">Alligator weed</a></li>
+                <li><a href="#" class="plantLink" data-plant="plant42" onclick="showPlantDetails('Nepalese Alder')">Nepalese Alder</a></li>
+                <li><a href="#" class="plantLink" data-plant="plant43" onclick="showPlantDetails('Bamboo')">Bamboo</a></li>
+                <li><a href="#" class="plantLink" data-plant="plant44" onclick="showPlantDetails('Black-jack')">Black-jack</a></li>
+                <li><a href="#" class="plantLink" data-plant="plant45" onclick="showPlantDetails('Lemon')">Lemon</a></li>
+                <li><a href="#" class="plantLink" data-plant="plant46" onclick="showPlantDetails('Adlay/Job’s tears')">Adlay/Job’s tears</a></li>
+                <li><a href="#" class="plantLink" data-plant="plant47" onclick="showPlantDetails('Ebolo/Thickhead')">Ebolo/Thickhead</a></li>
+                <li><a href="#" class="plantLink" data-plant="plant48" onclick="showPlantDetails('Dotted Smartweed')">Dotted Smartweed</a></li>
+                <li><a href="#" class="plantLink" data-plant="plant49" onclick="showPlantDetails('Alligator weed')">Alligator weed</a></li>
+                <li><a href="#" class="plantLink" data-plant="plant50" onclick="showPlantDetails('Indian Goosegrass')">Indian Goosegrass</a></li>
+                
+            </ul>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <h2>Contact</h2>
+            <p>Feel free to reach out to us:</p>
+            <div class="contact-list">
+                <div class="contact-card">
+                    <img src="Manogya.jpg" alt="Manogya" class="contact-img">
+                    <div class="contact-info">
+                        <strong>Manogya</strong><br>
+                        khanalmanogya123@gmail.com<br>
+                        <a href="https://instagram.com/manogya_khanall" target="_blank">@manogya_khanall</a>
+                    </div>
+                </div>
+                <div class="contact-card">
+                    <img src="padma.jpg" alt="Padma" class="contact-img">
+                    <div class="contact-info">
+                        <strong>Padma</strong><br>
+                        padmasamvabgrg@gmail.com<br>
+                        <a href="https://instagram.com/padma_sg_" target="_blank">@padma_sg_</a>
+                    </div>
+                </div>
+                <div class="contact-card">
+                    <img src="abishree.jpg" alt="Abishree" class="contact-img">
+                    <div class="contact-info">
+                        <strong>Abishree</strong><br>
+                        abishreekc@gmail.com<br>
+                        <a href="https://instagram.com/abi_shreeeee" target="_blank">@abi_shreeeee</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Plant Details Section (Only Accessible After Clicking a Plant) -->
+        <section id="plantDetails" class="section">
+            <h2 id="plantName">Plant Details</h2>
+            <p id="plantData">Details about the selected plant will appear here.</p>
+            <button id="backToContents" onclick="showSection('contents')">Back to Contents</button>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
